@@ -5,11 +5,15 @@ import PackageDescription
 
 let package = Package(
     name: "SwiftSkill",
+    platforms: [
+        .iOS(.v15),
+        .macOS(.v11)
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "SwiftSkill",
-            targets: ["SwiftSkill"] 
+            targets: ["SwiftSkill"]
         ),
     ],
     targets: [
